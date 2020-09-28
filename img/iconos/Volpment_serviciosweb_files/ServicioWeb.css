@@ -1,0 +1,186 @@
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);    
+  }
+  .texto-video {
+    color: White;
+    font: size 5px;
+    
+  }
+  .display-3 {
+    color: white;
+    font: size 60px;
+    
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+
+
+  h1{
+      color: black;
+      margin-top: 80px;
+      text-align: center;
+      font-size: 60px;
+  }
+
+h2 {
+    font-weight: 800;
+    margin-left: 10px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-left: 10px;
+  color:white;
+  align-items: center;
+}
+
+p {
+  color: White;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 20px;
+  
+
+}
+.contenedor {
+  width: 100%;
+  max-width: 95%;
+
+}
+
+
+/* main */
+.Container0 {
+    border-block-color: black ;
+    background-color: transparent;
+    display: flex;
+    z-index: -1;
+    grid-template-rows: 3px;
+    
+}
+#opciones,#soporte,#componentes, #herramientas{
+background-color: white;
+padding: 20px;
+
+
+}
+.btn btn-primary btn-lg btn-block {
+  font-style: oblique;
+  border-block-color: white;
+  background-blend-mode: lighten;
+  box-decoration-break: slice;
+
+}
+#Requerimientos{
+  border-block-color: white;
+  background-color: blueviolet;
+  color: azure;
+  
+}
+
+#Tipos {
+  border-block-color: white;
+  background-color: brown;
+  color: aliceblue;
+  
+}
+#Herramientas {
+  border-block-color: white;
+  background-color: rgb(226, 192, 43);
+  color: blue;
+  
+}
+.div-opciones {
+padding: 20px;
+}
+#p1 {
+padding: 20px;
+margin-top: 10px;
+}
+span {
+  font-weight: bold;
+}
+#separador {
+  border-block-end-style: ridge;
+  backface-visibility: visible;
+  color: #f8b500;
+  height: 30px;
+  border:1px dashed;
+
+}
+#separador1 {
+  border-block-end-style: ridge;
+  backface-visibility: visible;
+  color: #8638BB;
+  height: 10px;
+  border:1px dashed;
+}
+#h3-div {
+  color: blueviolet;
+  font-weight: 400;
+  margin-left: 10px;
+  margin: 10px auto;
+  
+}
+.icono {
+  display: block;
+  margin-top: 10px;
+}
+#pregunta {
+  color: black;
+  font-weight: 1000;
+  font-stretch: extra-condensed;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-style: italic;
+  font-optical-sizing: auto;
+
+}
+.text-justify col-align-text-center vh-auto{
+  margin-top: 20px;
+}

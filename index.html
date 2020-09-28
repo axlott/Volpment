@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volpment</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/flipdown.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="bg-light">
+    <nav class="site-header sticky-top py-1">
+        <div class="header-content container d-flex flex-column flex-md-row justify-content-between">
+            <div>
+                <a class="py-2 d-none d-md-inline-block" href="index.html">Volpment</a>
+                <a class="py-2 d-none d-md-inline-block" href="serviciosWeb.html">Servicios</a>
+            </div>
+            <a class="py-2 w-100 icon-header text-center" href="#" aria-label="Product">
+                <img class="w-50 w-md-100 mt-md-5 pt-md-2" src="img/Logos/VOLPMENT_Principal.png" alt="">
+                <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                    viewBox="0 0 24 24" focusable="false">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+                    </path>
+                </svg>-->
+            </a>
+            <div>
+                <a class="py-2 d-none d-md-inline-block" href="#">About</a>
+                <a class="py-2 d-none d-md-inline-block" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Baner Principal -->
+    <section class="banner bg-primary">
+        <div class="img-banner">
+            <div class="ml-5" style="top: 20%; position: absolute; color: white;">
+                <h1>Volpment</h1>
+                <span class="min-title">desarrollo a tu medida</span>
+                <div class="desc-title mt-3">
+                    <p>
+                        Somos un equipo perfectamente armado y capacitado para el
+                        desarrollo profecional en todos los dispositivos, con diferentes
+                        usos para facilitar tu trabajo.
+                    </p>
+                    <a href="" class="btn btn-warning px-4">VER SERVICIOS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="" class="rounded-circle instant-message text-center text-light bg-success">
+        <i class="fab fa-3x fa-whatsapp my-auto"></i>
+    </a>
+    <section style="top: -4rem;">
+        <img src="img/wave-volpment.svg" alt="" id="wave-01" />
+    </section>
+    <!-- Ofertas -->
+    <section style="top: -4rem;">
+        <div class="text-center w-100 px-3 px-xs-0 py-4">
+            <h2 class="mb-2">TE OFRECEMOS</h2>
+            <p class="mx-auto py-2" style="max-width: 600px;">
+                Somos una empresa con sede principal en Bolivia, dedicada al
+                desarrollo e innovación en el mundo dela tecnología.
+            </p>
+            <p class="mx-auto" style="max-width: 640px;">
+                Te ayudaremos a dar el siguiente paso en tu negocio. Digitalizando rus
+                sueños, productos y/o servicios, organizando las demandas de tu
+                empresa con soluciones prácticas, personalizada y a tu medida.
+            </p>
+        </div>
+        <div class="container">
+            <div class="offer-list text-center text-md-justify px-5">
+                <div class="offer text-justify">
+                    <img class="mx-auto" src="img/MacBook-Pro-1.png" alt="" />
+                    <h3>Diseño UX/UI</h3>
+                    <p>
+                        Diseñamos interdases digitatels únicas, con experiencia user
+                        friedly.
+                    </p>
+                </div>
+                <div class="offer text-justify">
+                    <img class="mx-auto" src="img/MacBook-Pro-1.png" alt="" />
+                    <h3>Desarrollo Web</h3>
+                    <p>Creamos websites únicos con tecnología moderna.</p>
+                </div>
+                <div class="offer text-justify">
+                    <img class="mx-auto" src="img/MacBook-Pro-1.png" alt="" />
+                    <h3>Gestion de Datos</h3>
+                    <p>
+                        Organizamos el comercio de tus datos, para dar un mejor servicio.
+                    </p>
+                </div>
+            </div>
+            <div class="py-2 text-center">
+                <span class="mx-auto text-white">
+                    <small>VER MÁS</small>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light" style="height: 50rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 order-2 order-md-1" style="z-index: 15;height:35rem;">
+                    <!--<img src="img/MacBook-Pro-1.png" class="w-75 w-md-100 mx-auto mx-md-0" />-->
+                    <div class="slider-wrap">
+                        <div id="card-slider" class="slider">
+                            <div class="slider-item"></div>
+                            <div class="slider-item"></div>
+                            <div class="slider-item"></div>
+                            <div class="slider-item"></div>
+                            <div class="slider-item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 my-md-auto mt-4 order-1 order-md-2">
+                    <h3 class="text-orange">CON TECNOLOGÍA SE HACE TODO!</h3>
+                    <p class="text-orange">
+                        La tecnología brinda mejoras para tu negocio, facilitando muchas
+                        de las tareas difíciles. Keep Calm, nosotros lo desarrollamos por
+                        vos.
+                    </p>
+                    <div class="mt-2">
+                        <a href="" class="btn btn-orange text-white">Reunámonos <i class="fab fa-skype"></i>
+                        </a>
+                    </div>
+                    <p class="text-dark">
+                        <small>Agendemos una videollamada por Skype, donde podremos responder
+                            todas tus dudas</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <img src="img/wave-02-volpment.svg" id="wave-01" />
+    </section>
+    <section class="bg-orange">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-3 offset-2 align-self-center align-self-md-baseline">
+                    <img src="img/MacBook-Pro-1.png" class="w-100" />
+                </div>
+                <div class="col-5 align-self-center">
+                    <h3>OFERTA ESPECIAL</h3>
+                    <p>
+                        Obten un <small>(www.ejemplo.com)</small> dominio gratis y un 15%
+                        de descuento en nuestro hosting en el primer mes, solicitando
+                        ahora mismo el paquete especial
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mx-auto my-3">
+                <div class="text-white px-3 px-md-0 mb-5">
+                    <div id="countdown" class="mx-auto flipdown"></div>
+                </div>
+                <a href="" class="mx-auto btn btn-lg btn-light py-1 text-orange">¡LO QUIERO!</a>
+            </div>
+        </div>
+    </section>
+    <section style="padding-bottom: 4rem;background-image: url(img/Logos/33ss69592.jpg);" class="bg-img-repeat">
+        <div class="text-center mx-auto pt-5">
+            <h2 class="text-dark" style="font-weight: 800;">TEAM VOLPMENT</h2>
+            <p class="text-dark mx-auto my-0 pb-4" style="font-weight: 700; max-width: 500px;">
+                Somos un grupo de profesionales y universitarios que los unió la
+                pasión por la tecnología, la innovación y el diseño
+            </p>
+        </div>
+        <div class="container py-3">
+            <div class="inline-list">
+                <div class="inline-item border-md border-purple rounded-circle m-2">
+                    <div class="bg-img rounded-circle w-100" style="background-image: url(img/MacBook-Pro-1.png);">
+                    </div>
+                </div>
+                <div class="inline-item border-md border-yellow rounded-circle m-2">
+                    <div class="bg-img rounded-circle w-100" style="background-image: url(img/MacBook-Pro-1.png);">
+                    </div>
+                </div>
+                <div class="inline-item border-md border-orange rounded-circle m-2">
+                    <div class="bg-img rounded-circle w-100" style="background-image: url(img/MacBook-Pro-1.png);">
+                    </div>
+                </div>
+                <div class="inline-item border-md border-blue rounded-circle m-2">
+                    <div class="bg-img rounded-circle w-100" style="background-image: url(img/MacBook-Pro-1.png);">
+                    </div>
+                </div>
+                <div class="inline-item border-md border-blue rounded-circle m-2">
+                    <div class="bg-img rounded-circle w-100" style="background-image: url(img/MacBook-Pro-1.png);">
+                    </div>
+                </div>
+                <div class="inline-item border-md border-purple rounded-circle m-2">
+                    <div class="bg-img rounded-circle w-100" style="background-image: url(img/MacBook-Pro-1.png);">
+                    </div>
+                </div>
+                <div class="inline-item border-md border-yellow rounded-circle m-2">
+                    <div class="bg-img rounded-circle w-100" style="background-image: url(img/MacBook-Pro-1.png);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-yellow py-4">
+        <p class="text-dark ml-5 py-4" style="max-width: 550px; font-weight: 600;">
+            Nos dedicamos a idear, diseñar e implementar productos para la web.
+            Ayudamos a nuestros clientes a adaptarse a los nuevos medios digitales,
+            creando plataformas para todo tipo de dispositivo.
+        </p>
+    </section>
+    <section>
+        <div class="text-center mx-auto pt-5">
+            <h2 class="text-light pt-4" style="font-weight: 800;">BLOG VOLPMENT</h2>
+            <p class="text-light mx-auto my-0 pb-4" style="max-width: 500px;">
+                Dejanos tu email para suscribirte a nuestro blog, donde publicamps
+                novedades relacionadas al mundo, ciencia y desarrollo.
+            </p>
+            <div class="py-4">
+                <form action="" method="post" class="mx-auto" style="max-width: 450px;">
+                    <div class="form-group-unifique">
+                        <input class="form-control form-control-transparent" type="email" name="email" id="email"
+                            placeholder="Tu Correo" />
+                        <button type="submit" class="btn btn-orange text-light px-3">
+                            SUBSCRIBIRME
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark">
+        <div class="container py-3">
+            <div class="row py-4 mx-auto mx-md-0">
+                <div class="col-12 col-md-4 my-auto">
+                    <div class="my-4 mx-auto px-3 w-75 w-md-100">
+                        <div class="text-right">
+                            <img class="w-100" style="max-width: 150px;" src="img/Logos/VOLPMENT_En-blanco.png" alt="">
+                        </div>
+                        <div class="text-left">
+                            <img class="w-100" style="max-width: 200px;" src="img/Logos/VOLPMENT_Logotipo-Blanco.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <p class="text-light">
+                        Servicios especializados en tecmología web, desarrollo de
+                        aplicaciones, soporte y mantenimiento.
+                    </p>
+                    <div class="my-4 text-center">
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-instagram text-white"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-facebook text-white"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-twitter text-white"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-whatsapp text-white"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 my-auto text-center pb-5">
+                    <div class="inline-list pb-5">
+                        <div class="inline-item mx-2 text-left">
+                            <h3 style="font-weight: 500;" class="text-left">About</h3>
+                            <a href="" class="text-left text-light">History</a>
+                            <a href="" class="text-left text-light">Our Team</a>
+                            <a href="" class="text-left text-light">Our Name</a>
+                            <a href="" class="text-left text-light">Terms & Condition</a>
+                            <a href="" class="text-left text-light">Privacy Policy</a>
+                        </div>
+                        <div class="inline-item mx-2 text-left">
+                            <h3 style="font-weight: 500;" class="text-left">Services</h3>
+                            <a href="" class="text-left text-light">How to Order</a>
+                            <a href="" class="text-left text-light">Our Product</a>
+                            <a href="" class="text-left text-light">My Web Status</a>
+                            <a href="" class="text-left text-light">Blog Volpment</a>
+                            <a href="" class="text-left text-light">Payment Method</a>
+                        </div>
+                        <div class="inline-item mx-2 text-left">
+                            <h3 style="font-weight: 500;" class="text-left">Other</h3>
+                            <a href="" class="text-left text-light">Contact Us</a>
+                            <a href="" class="text-left text-light">Help</a>
+                            <a href="" class="text-left text-light">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/flipdown.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

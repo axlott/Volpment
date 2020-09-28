@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: #f8f4f8;
+}
+.contenedor {
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.contenedor-flex {
+    display: flex;
+}
+.contenedor-flex > .relleno{
+    
+    max-width: 50%;
+}
+.relleno img {  
+    max-width: 100%;
+}
+.formulario {
+    width: 500px;
+    max-width: 95%;
+    padding: 20px;
+}
+.titulo {
+    color: rgba(0,0,0,0.3);
+    font-size: 50px;
+    text-align: center;
+}
+input:not([type="submit"]),
+textarea,
+select{
+    width: 100%;
+    background-color: #e1e1e1;
+    padding: 5px;
+} 
+select  {
+    -webkit-appearance: none;
+    appearance: none;
+}
+label{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+/* footer */
+footer{
+    margin-top: 30px;
+}
+#atras {
+    display: none;
+}

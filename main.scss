@@ -1,0 +1,228 @@
+::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: .25rem;
+}
+::-webkit-resizer{
+	background: #6f99ff;
+}
+body{
+    overflow: overlay;
+    background-color: #f8f4f8 !important;
+    color: white;
+}
+.banner{
+    position: relative;
+    top: -4rem;
+    height: calc(80vh + 4rem) !important;
+    width: 100%;
+}
+h1, h2, p {
+    color: white;
+    line-height: 1.2;
+}
+$theme-colors: (
+    "primary": #47c2db,
+);
+section{ 
+    position: relative;
+    background-color: #47c2db;
+}
+.btn-warning{
+    font-weight: 700;
+    color: #0f202c;
+    background-color: #f2d483;
+    border-color: #f2d483;
+}
+@import "node_modules/bootstrap/scss/bootstrap";
+/*
+
+        Top Banner
+
+*/
+.min-title{
+    position: absolute;
+    bottom: 0px;
+    left: 9.8rem;
+}
+.desc-title{
+    position: absolute;
+    left: 20px;
+    text-align: left;
+}
+#wave-01{
+    position: absolute;
+    bottom: -1px;
+    width: 100% !important;
+    & path {
+        fill: #47c2db;
+        stroke: none;
+    }
+}
+.img-banner{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/volpment_computer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*
+
+        Nav Header
+
+*/
+.site-header {
+    height: 4rem;
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+    text-transform: uppercase;
+}
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.header-content{
+    height: 100%;
+    align-items: center;
+}
+.header-content div{
+    width: 100%;
+    text-align-last: justify;
+}
+.icon-header{
+    margin: 0 3rem;
+}
+/*
+
+        Ofertas
+
+*/
+.offer-list{
+    & .offer{
+        text-align: center !important;
+        text-align-last: center;
+        display: inline-grid;
+        max-width: 200px;
+        & img{
+            max-width: 100px;
+        }
+    }
+}
+.inline-list{
+    text-align: center;
+    & .inline-item{
+        display: inline-grid;
+        width: 120px;
+        height: 120px;
+    }
+}
+.bg-img{
+    background-position: center !important;
+    background-size: cover !important;
+}
+.bg-img-repeat{
+    background-position: left;
+    background-repeat: repeat;
+}
+.instant-message{
+    position: fixed;
+    display: grid;
+    width: 4rem;
+    height: 4rem;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    animation: all ease-in 5s;
+}
+.instant-message:hover{
+    box-shadow: 0px 0px 15px black;
+    text-decoration: none;
+}
+
+
+
+
+.slider-wrap{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -2rem;
+    .slider{
+        position: absolute;
+        width: 100%;
+        left: 50px;
+        top: 50px;
+    }
+}
+.slider-item{
+    width: 315px;
+    height: 218px;
+    background-position: center;
+    background-size: contain;
+    /*padding: 20px 0 25px 30px;*/
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    box-shadow: 0 4px 9px #f1f1f4;
+    left: 0;
+    top: 0;
+    & .animation-card_image{
+        max-width: 60px;
+        max-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 0 4px 9px rgba(241, 241, 244, 0.72);
+        background-color: #ffffff;
+        & img{
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    & .animation-card_content{
+        width: 100%;
+        max-width: 374px;
+        margin-left: 26px;
+        font-family: "Open Sans",sans-serif;
+        & .animation-card_content_title{
+            color: #4a4545;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: -.18px;
+            line-height: 24px;
+            margin: 0;
+        }
+        & .animation-card_content_description{
+            color: #696d74;
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: normal;
+            line-height: 24px;
+            margin: 10px 0 0 0;
+        }
+        & .animation-card_content_city{
+            font-size: 11px;
+            margin: 10px 0 0 0;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #696d74;
+        }
+    }
+}

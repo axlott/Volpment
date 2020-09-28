@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volpment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="site-header sticky-top py-1">
+            <div class="header-content container d-flex flex-column flex-md-row justify-content-between">
+                <div>
+                    <a class="py-2 d-none d-md-inline-block" href="index.html">Volpment</a>
+                    <a class="py-2 d-none d-md-inline-block" href="serviciosWeb.html">Servicios</a>
+                </div>
+                <a class="py-2 w-100 icon-header text-center" href="index.html" aria-label="Product">
+                    <img class="w-50 w-md-100 mt-md-5 pt-md-2" src="img/Logos/VOLPMENT_Principal.png" alt="">
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                        viewBox="0 0 24 24" focusable="false">
+                        <title>Product</title>
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path
+                            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+                        </path>
+                    </svg>-->
+                </a>
+                <div>
+                    <a class="py-2 d-none d-md-inline-block" href="#">About</a>
+                    <a class="py-2 d-none d-md-inline-block" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo">¿algún mensaje?</h1>
+        <div class="contenedor-flex mt-5">
+            <div class="relleno">
+                <img src="img/Logos/VOLPMENT_Principal.png" alt="Logo Volpment">
+            </div>
+
+            <div>
+                <form action="mensaje.php" method="POST" class="formulario rounded shadow">
+
+                    <div class="form-group " id="grupo-nombre">
+                        <label for="nombre" id="label-nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required class="border-0 rounded">
+                    </div>
+                    <div class="form-group" id="grupo-apellido">
+                        <label for="apellido" id="label-apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required class="border-0 rounded">
+                    </div>
+                    <div class="form-group d-none" id="grupo-email">
+                        <label for="email" id="label-email">Correo Electronico:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required class="border-0 rounded">
+                    </div>
+                    <div class="form-group d-none" id="grupo-numero">
+                        <label for="numero" id="label-numero">Numero Telefonico:</label>
+                        <input type="number" id="numero" name="numero" placeholder="Numero de Celular" class="border-0 rounded">
+                    </div>
+                    <div class="form-group d-none" id="grupo-motivo">
+                        <label for="motivo" id="label-motivo">Motivo de Cotacto:</label>
+                        <select name="" id="motivo" name="motivo" required class="border-0 rounded">
+                            <option value="">---Seleccione una opción---</option>
+                            <option value="">Información</option>
+                            <option value="">Negocios</option>
+                            <option value="">Quejas </option>
+                        </select>
+                    </div>
+                    <div class="form-group d-none" id="grupo-mensaje">
+                        <label for="mensaje" id="label-mensaje">Mensaje:</label>
+                        <textarea class="" name="" id="mensaje" cols="30" rows="10" name="mensaje"
+                            required class="border-0 rounded"></textarea>
+                    </div>
+                    <div id="error"> </div>
+                    <div class="text-center my-3 d-none" id="grupo-botonForm">
+                        <input type="submit" value="enviar" id="botonForm" class="btn btn-purple px-3">
+                    </div>
+                </form>
+                <div class="row">
+                    <button id="atras" class="btn col-md-4"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                        </svg>Atras
+                    </button>
+
+                    <button id="siguiente" class="btn col-md-4 offset-md-4">Siguiente <svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </button>
+                </div>
+
+                
+            </div>
+        </div>
+
+    </main>
+    <footer class="bg-dark">
+        <div class="container py-3">
+            <div class="row py-4 mx-auto mx-md-0">
+                <div class="col-12 col-md-4 my-auto">
+                    <div class="my-4 mx-auto px-3 w-75 w-md-100">
+                        <div class="text-right">
+                            <img class="w-100" style="max-width: 150px;" src="img/Logos/VOLPMENT_En-blanco.png" alt="">
+                        </div>
+                        <div class="text-left">
+                            <img class="w-100" style="max-width: 200px;" src="img/Logos/VOLPMENT_Logotipo-Blanco.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <p class="text-light">
+                        Servicios especializados en tecmología web, desarrollo de
+                        aplicaciones, soporte y mantenimiento.
+                    </p>
+                    <div class="my-4 text-center">
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-instagram text-white"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-facebook text-white"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-twitter text-white"></i></a>
+                        <a href="" class="mx-2"><i class="fab fa-lg fa-whatsapp text-white"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 my-auto text-center pb-5">
+                    <div class="inline-list pb-5">
+                        <div class="inline-item mx-2 text-left">
+                            <h3 style="font-weight: 500;" class="text-left">About</h3>
+                            <a href="" class="text-left text-light">History</a>
+                            <a href="" class="text-left text-light">Our Team</a>
+                            <a href="" class="text-left text-light">Our Name</a>
+                            <a href="" class="text-left text-light">Terms & Condition</a>
+                            <a href="" class="text-left text-light">Privacy Policy</a>
+                        </div>
+                        <div class="inline-item mx-2 text-left">
+                            <h3 style="font-weight: 500;" class="text-left">Services</h3>
+                            <a href="" class="text-left text-light">How to Order</a>
+                            <a href="" class="text-left text-light">Our Product</a>
+                            <a href="" class="text-left text-light">My Web Status</a>
+                            <a href="" class="text-left text-light">Blog Volpment</a>
+                            <a href="" class="text-left text-light">Payment Method</a>
+                        </div>
+                        <div class="inline-item mx-2 text-left">
+                            <h3 style="font-weight: 500;" class="text-left">Other</h3>
+                            <a href="" class="text-left text-light">Contact Us</a>
+                            <a href="" class="text-left text-light">Help</a>
+                            <a href="" class="text-left text-light">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/contacto.js"></script>
+
+</body>
+
+</html>
