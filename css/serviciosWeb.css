@@ -56,3 +56,49 @@ header {
       display: none;
     }
   }
+  header p {
+    font-weight: 500;
+    color: white;
+}
+
+   /* Globales  */
+
+   body {
+       background-color: #F3EFF5;
+   }
+   section{
+       background-color: #F3EFF5;
+   }
+   article {
+    background-color: #F3EFF5;
+   }
+   h3{
+       color: #0D1F2D;
+   }
+   h4{
+     text-align: center;
+     color: #0D1F2D;
+   }
+   p{
+       color: #0D1F2D;
+   }
+   
+
+   /*  Paginas servicios */
+
+   img {
+       max-width: 100%;
+   }
+   .letrero {
+     margin: 20px;
+     background-color: white;
+   }
+   .letrero p{
+    text-align: center;
+   }
+   .letrero img{
+     max-width: 40%;
+   }
+   .imagen {
+     margin: 0 auto;    
+   }
