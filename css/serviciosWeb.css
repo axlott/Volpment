@@ -102,3 +102,56 @@ header {
    .imagen {
      margin: 0 auto;    
    }
+   .ordena{
+    background-color: #0D1F2D;      
+   }
+   .ordena h3{
+    color: #F3EFF5;
+    font-size: 50px;
+   }
+   .ordena p{
+    color: #F3EFF5;
+   }
+   .ordena .btn {
+     background-color: #F3EFF5;
+   }
+   .posicion img{
+     width: 500px;
+   }
+   .posicion2 img{
+    width: 500px;
+  }
+  .posicion3 img{
+    width: 500px;
+  }
+   .posicion {
+     top: 0;
+     right: 50px;
+   }
+   .posicion2 {
+    bottom: 0;
+    left: -100px;
+  }
+  .posicion3 {
+    right: 0px;
+    bottom: 0;
+  }
+  .ventas {
+    background-color: #F3EFF5;
+
+  }
+   .ventas h4{
+    color: #0D1F2D;
+    font-size: 50px;
+   }
+   .ventas p{
+    color: #0D1F2D;
+   }
+   .ventas p strong{
+    color: #0D1F2D;
+    font-size: 35px;
+   }
+   .ventas .btn {
+     background-color: #0D1F2D;
+     color: #F3EFF5;
+   }
