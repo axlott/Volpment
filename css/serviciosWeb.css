@@ -50,7 +50,7 @@ header {
   
   @media (pointer: coarse) and (hover: none) {
     header {
-      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+      background: url('../img/servicios/MacBook\ Pro\ 16-min\ \(2\).png') black no-repeat center center scroll;
     }
     header video {
       display: none;
@@ -92,6 +92,7 @@ header {
    .letrero {
      margin: 20px;
      background-color: white;
+     width: 210px;
    }
    .letrero p{
     text-align: center;
@@ -99,11 +100,9 @@ header {
    .letrero img{
      max-width: 40%;
    }
-   .imagen {
-     margin: 0 auto;    
-   }
    .ordena{
-    background-color: #0D1F2D;      
+    background-color: #0D1F2D;     
+    min-height: 700px; 
    }
    .ordena h3{
     color: #F3EFF5;
@@ -116,33 +115,52 @@ header {
      background-color: #F3EFF5;
    }
    .posicion img{
-     width: 500px;
+     width: 400px;
    }
+   
    .posicion2 img{
-    width: 500px;
+    width: 400px;
   }
   .posicion3 img{
-    width: 500px;
+    width: 400px;
   }
+  @media only screen and (max-width:992px) {
+    .posicion img{
+      width: 200px;
+    }
+    .posicion2 img{
+      width: 200px;
+    }
+    .posicion3 img{
+      width: 200px;
+    }
+   }
+   @media only screen and (max-width:512px) {
+    .posicion img{
+      display: none;
+    }
+   
+   }
    .posicion {
      top: 0;
      right: 50px;
    }
    .posicion2 {
-    bottom: 0;
-    left: -100px;
+    bottom: 500px;
+    left: 100px;
   }
   .posicion3 {
-    right: 0px;
-    bottom: 0;
+    right: 100px;
+    bottom: 50px;
   }
   .ventas {
     background-color: #F3EFF5;
-
+    max-width: 410px;
+    min-width: 410px;
   }
    .ventas h4{
     color: #0D1F2D;
-    font-size: 50px;
+    font-size: 40px;
    }
    .ventas p{
     color: #0D1F2D;
@@ -154,4 +172,7 @@ header {
    .ventas .btn {
      background-color: #0D1F2D;
      color: #F3EFF5;
+   }
+   .precios-img img{
+    height: 150px;
    }
