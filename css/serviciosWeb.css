@@ -8,6 +8,18 @@ header {
     overflow: hidden;  
   }
   
+  * {
+    box-sizing: border-box;
+  }
+  
+  .box-800px-100px-25px {
+    width: 800px;
+    height: 100px;
+    padding: 25px;
+    border: 5px solid red;
+    box-sizing: border-box;
+  }
+
   header video {
     position: absolute;
     top: 50%;
@@ -30,6 +42,28 @@ header {
   .display-3 {
     color: #e5e2e7;
     font: size 60px;
+  }
+
+  .box-850px{
+    width: 850px;
+    height: 100px;
+  }
+  .centered {
+    position: absolute; /* or absolute */
+    top: 10%;
+    left: 15%;
+  }
+  
+  .bold-mont {
+    margin: 0;
+    font-family: "Montserrat Black";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #F3EFF5;
+    text-align: center;}
+
+  .justify {
+    text-align: justify;
   }
   
   header .container {
